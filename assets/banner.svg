@@ -1,0 +1,72 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b12"/>
+      <stop offset="55%" stop-color="#10241a"/>
+      <stop offset="100%" stop-color="#081210"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#3f8f5c" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#3f8f5c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ground" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a2e20" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#25402c" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1a2e20" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="360" fill="url(#glow)"/>
+
+  <!-- Distant sun / moon -->
+  <circle cx="600" cy="70" r="46" fill="#e8c27a" opacity="0.12"/>
+  <circle cx="600" cy="70" r="30" fill="#e8c27a" opacity="0.10"/>
+
+  <!-- Ground silhouette strip -->
+  <path d="M0,320 Q150,300 300,315 T600,308 T900,318 T1200,305 L1200,360 L0,360 Z" fill="url(#ground)"/>
+
+  <!-- Distant volcano / mountain shapes -->
+  <path d="M40,300 L140,190 L230,300 Z" fill="#16261a" opacity="0.5"/>
+  <path d="M950,300 L1060,170 L1170,300 Z" fill="#16261a" opacity="0.5"/>
+  <path d="M180,300 L250,230 L320,300 Z" fill="#1a2e20" opacity="0.4"/>
+  <path d="M880,300 L950,235 L1020,300 Z" fill="#1a2e20" opacity="0.4"/>
+
+  <!-- Dino silhouette left -->
+  <g opacity="0.18" fill="#8fd3a8">
+    <path d="M90,300 
+             C95,265 120,240 150,235 
+             C155,215 175,195 195,200 
+             C205,190 220,192 225,205 
+             C240,205 250,220 245,235 
+             C260,240 268,255 262,270 
+             C275,275 280,290 270,300 
+             C240,305 210,300 195,300 
+             C190,285 180,278 170,280 
+             C160,290 145,300 130,300 
+             C120,290 110,290 100,300 Z"/>
+  </g>
+
+  <!-- Footprint trail (decorative, low opacity) -->
+  <g fill="#ffffff" opacity="0.08">
+    <ellipse cx="150" cy="330" rx="10" ry="6"/>
+    <ellipse cx="180" cy="340" rx="10" ry="6"/>
+    <ellipse cx="1020" cy="335" rx="10" ry="6"/>
+    <ellipse cx="1050" cy="345" rx="10" ry="6"/>
+    <ellipse cx="990" cy="345" rx="10" ry="6"/>
+  </g>
+
+  <!-- Thin decorative lines -->
+  <line x1="80" y1="120" x2="260" y2="120" stroke="#8fd3a8" stroke-width="1" opacity="0.15"/>
+  <line x1="940" y1="120" x2="1120" y2="120" stroke="#8fd3a8" stroke-width="1" opacity="0.15"/>
+
+  <!-- Headline -->
+  <text x="600" y="170" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="60.0" fill="#ffffff" font-weight="bold">
+    Dino Hunters Script
+  </text>
+
+  <!-- Tagline -->
+  <text x="600" y="220" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21.0" fill="#c9d1d9">
+    Stat tracker for Dino Hunters Script players — logs kills, drops, one .exe.
+  </text>
+</svg>
